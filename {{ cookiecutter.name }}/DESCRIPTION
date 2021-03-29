@@ -1,0 +1,16 @@
+Package: {{ cookiecutter.name }}
+Title: Package Title Here
+Version: 0.1.0
+Authors@R: c(person("First", "Last", role = c("aut", "cre"),
+                    email = "email@example.com"),
+             person("Imperial College of Science, Technology and Medicine",
+                    role = "cph"))
+Description: Description of the pacakge in more than one full sentence.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+URL: {{ cookiecutter.url }}
+BugReports: {{ cookiecutter.url }}/issues
+Suggests:
+    testthat

@@ -1,0 +1,13 @@
+steps:
+  - label: ":whale::rstats: Build"
+    command: docker/build
+
+  - wait
+
+  - label: ":docker: Docker connection test"
+    command: docker/test_connection
+
+  - wait
+
+  - label: ":shipit: Push images"
+    command: docker/push
