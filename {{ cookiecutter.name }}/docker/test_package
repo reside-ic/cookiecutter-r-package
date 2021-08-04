@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -ex
+HERE=$(dirname $0)
+. $HERE/common
+
+docker run --rm \
+       --workdir /src \
+       $TAG_SHA \
+       Rscript -e "library($PACKAGE_NAME)"

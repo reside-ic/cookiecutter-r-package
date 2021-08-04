@@ -4,8 +4,8 @@ steps:
 
   - wait
 
-  - label: ":docker: Docker connection test"
-    command: docker/test_connection
+  - label: ":docker: Test package installed"
+    command: docker/test_package
 
   - wait
 
