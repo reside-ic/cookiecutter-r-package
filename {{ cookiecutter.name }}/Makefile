@@ -2,7 +2,7 @@ PACKAGE := $(shell grep '^Package:' DESCRIPTION | sed -E 's/^Package:[[:space:]]
 RSCRIPT = Rscript --no-init-file
 
 all:
-	${RSCRIPT} -e 'devtools::compile_dll()'
+	${RSCRIPT} -e 'pkgbuild::compile_dll()'
 
 test:
 	${RSCRIPT} -e 'devtools::test()'
