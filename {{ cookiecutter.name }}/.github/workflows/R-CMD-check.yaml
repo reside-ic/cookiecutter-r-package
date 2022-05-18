@@ -14,6 +14,9 @@ jobs:
 
     name: ${{ matrix.config.os }} (${{ matrix.config.r }})
 
+    # Shorter timeout to prevent mac builders hanging for 6 hours!
+    timeout-minutes: 30
+
     strategy:
       fail-fast: false
       matrix:
